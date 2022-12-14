@@ -9,7 +9,7 @@
 6-abs.c
 7-print_last_digit.c
 8-24_hours.c
-9-times_table.c
+9-times_table.c  | Prints the 9 times table, starting with 0 |
 10-add.c
 11-print_to_98.c
 100-times_table.c
