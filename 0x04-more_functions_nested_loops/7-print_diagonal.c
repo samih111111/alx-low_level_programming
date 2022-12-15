@@ -1,29 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_diagonal - Print diagonal line dependent on the integer n.
- * @n : The number of lines using '\' characters to use
- * Return: Void.
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: The length of the line
  */
+
 void print_diagonal(int n)
 {
-	int i;
-	int spaces;
-
-	for (i = 0; i < n; i++)
-	{
-		for (spaces = 0; spaces < i; spaces++)
-		{
-			_putchar(' ');
-		}
-		_putchar('\\');
-		_putchar('\n');
-	}
+	int column, space, i;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
+	else
+	{
+		for (column = 0; column < n; column++)
+		{
+			i = column - 1;
+
+			for (space = 0; space <= i; space++)
+				_putchar(' ');
+			_putchar('\\');
+			_putchar('\n');
+		}
 	}
 }
-
